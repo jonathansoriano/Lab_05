@@ -7,7 +7,7 @@ public class PartyAffiliation {
         String menuChoice = "";
         String menu = "D- Democrat\tR- Republican\tI- Independant\t";
 
-        System.out.println(menu);
+        System.out.print(menu);
         menuChoice = in.nextLine();
         if (menuChoice.equalsIgnoreCase("D"))
             System.out.println("You get a Democratic Donkey.");
