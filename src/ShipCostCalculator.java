@@ -7,7 +7,7 @@ public class ShipCostCalculator {
         String trash= "";
         double itemPrice= 0.0;
         int FREE_SHIPPING =100;
-        double shippingRate= .02;
+        double SHIPPING_RATE= .02;
         double shipping= 0;
         double totalCost= 0;
         Scanner in = new Scanner(System.in);
@@ -36,7 +36,7 @@ public class ShipCostCalculator {
         }
         else
         {
-            shipping = shippingRate * itemPrice;
+            shipping = SHIPPING_RATE * itemPrice;
             totalCost = shipping + itemPrice;
             System.out.printf("Shipping was %.2f\n", shipping);
             System.out.printf("Your total cost is %.2f\n", totalCost);
